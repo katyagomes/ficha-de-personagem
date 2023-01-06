@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title> Trabalho </title>
+</head>
+
+<body class="background">
+    <div class="limparfloat">
+        <form>
+        <div class="ficha limparfloat">
+            <h1 class="title">Personagem</h1>
+            <div class="campo1">     
+
+            <label for="poderes" class="text"> Selecione os Poderes</label>
+            <br>
+            <select name="poderes" class="poderes" multiple>
+            <option disabled> Clique duas vezes para selecionar</option>
+        </select><BR>
+                <label for="opcoes" class="text"> Genero:</label>
+                <br><input type="radio" name="opcoes" id="op1" value="Feminino"><label for="op1" class="text">Feminino</label><br>
+                <input type="radio" name="opcoes" id="op2" value="Masculino"><label for="op2" class="text">Masculino</label><br>
+                <input type="radio" name="opcoes" id="op5" value="Outro"><label for="op5" class="text">Outro</label><br>
+                <label for="acessorios" class="text"> Selecione o acessorio</label>
+                <br>
+                <select name="acessorios" class="acessorios" multiple>
+                    <option disabled> Clique duas vezes para selecionar</option>
+                </select><BR>
+                <label for="selecao" class="text"> Tema do card</label>
+                        <br>
+                        <select name="seleCor" id="fundoCor">
+                            <option value="dark">Dark</option>
+                            <option value="ligth">Ligth</option>
+                            </select> 
+        </div>
+    </div>
+     
+        <div class="personagem limparfloat">
+               
+            <h1>Personagem: <input type="text" id="nome" placeholder="Escreva o nome aqui" required/></h1>
+            <label for="selecao" class="text"> Poderes:</label>
+                        <br>
+                        <select name="selecao" class="selecao selecionado" id="poder" multiple>
+                            <option disabled> Clique duas vezes para excluir</option>
+                        </select>   <br>
+                        <label for="selecao" class="text"> Acessórios:</label>
+                        <br>
+                        <select name="selecao" class="selecao selecionado" multiple>
+                            <option disabled> Clique duas vezes para excluir</option>
+                        </select>
+                        <br>
+                    </form>
+                    <input id="img-input" type="file" name="image"><br>
+                        <input type="button" value="gerar" id="gerar" name="gera">
+                        <button onclick="window.location.href = 'index.html'" class="text">Limpar</button>
+                        <br><br>
+    </div>
+
+<div class="limparfloat card" id="card">
+    <div class="card-body">
+    <h1 id="nomeCard" class="limparfloat"></h1>
+        <img id="preview" src="img.png" width="384" heigth="384"class="limparfloat"> <br>
+   <div class="conteudo">
+       <br> <label class="text" id="generoCard"></label>
+       <br> <label class="text" id="acessoriosCard"></label><br>
+       <label class="text" id="poderCard"></label><br>
+       <label class="text" id="persCard"></label>
+ 
+ 
+</div> 
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

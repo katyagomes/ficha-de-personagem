@@ -1,0 +1,65 @@
+
+.limparfloat::after {
+    content: "";
+    display: table;
+    clear: both;
+}    
+.ficha {
+    float: left;
+    margin-left: 16px;
+    border: 1px solid gray;
+    width: 500px;
+    padding: 32px;
+    margin-bottom: 32px;
+}
+body{
+    background-color: lightgray;
+}
+h1 {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: normal;
+font-weight: 600;
+text-align: center;
+
+}
+input{
+margin:16px;
+font-family: Arial;
+font-style: normal;
+}
+.text {
+    font-family: Arial;
+    font-style: normal;
+    margin-top:32px;
+    margin-bottom:32px;
+}
+.personagem {
+    float: right;
+    margin-right: 32px;
+    border: 1px solid gray;
+    width: 600px;
+    padding: 32px;
+    margin-bottom: 32px;
+}
+
+.card{
+display: none;
+margin: 32px;;
+background: #FAFAFA;
+border-radius: 10px;
+width: 420px;
+height: auto;
+
+}
+img{
+    border-radius:10px;
+    margin:16px;
+    
+}
+.conteudo{
+    display:block;
+     padding: 16px;
+}
+
+
+
